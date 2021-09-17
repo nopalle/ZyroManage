@@ -10,7 +10,7 @@ async def asupan(event):
         asupannya = f"{resp['url']}"
         return await tbot.send_file(event.chat_id, asupannya)
     except Exception:
-        await event.reply("`Error 404 not found...`")
+        await event.reply("`sabar coli dulu`")
 
 
 @register(pattern="^/chika ?(.*)")
@@ -20,4 +20,4 @@ async def chika(event):
         chikanya = f"{resp['url']}"
         return await tbot.send_file(event.chat_id, chikanya)
     except Exception:
-        await event.reply("`Error 404 not found...`")
+        await event.reply("`sabar coli dulu`")
