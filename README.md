@@ -7,20 +7,24 @@
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/7b375b3abb0b483fd0d98.jpg">
+  <img src="https://telegra.ph/file/f71c25a6aa58bd5a89f6a.jpg">
 </p>
 
-## Found Me On Telegram [@JisooXRobot](https://t.me/AnosVoldigoadBot)
+## Found Me On Telegram [@zyroscope](https://t.me/zyroscopebot)
 
 
 
 # DEPLOY
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/feriexp/JisooXRobot">
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/nopalle/ZyroManage">
   <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-aqua?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 ## Group Support:
 
-   <a href="https://t.me/AnosSupport"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
+   <a href="https://t.me/pencetnoh"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
 
-### Credit :  [Cinderella](https://github.com/Sur-vivor/CinderellaProBot) And [DaisyX](https://github.com/TeamDaisyX/DaisyX)           
+## Channel Bokep
+
+   <a href="https://t.me/bokepterbaru2"><img src="https://img.shields.io/badge/Bokep%20Indo%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
+
+### Credit :  [Feri](https://github.com/FeriEXP/JisooXRobot) , [Cinderella](https://github.com/Sur-vivor/CinderellaProBot) And [DaisyX](https://github.com/TeamDaisyX/DaisyX)           
