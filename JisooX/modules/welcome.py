@@ -139,27 +139,27 @@ def new_member(bot: Bot, update: Update):
         for new_mem in new_members:
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                update.effective_message.reply_text("Oh🤴Genos,My Owner has just joined your group.")
+                update.effective_message.reply_text("woo owner ku join! , welcome king! ")
                 continue
             
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
-                update.effective_message.reply_text("Whoa! A member of the Heroes Association just joined!")
+                update.effective_message.reply_text("welcome kak semoga betah murah rezeki sehat selalu insyaallah merdeka hbd")
                 
             # Welcome Sudos
             elif new_mem.id in SUDO_USERS:
-                update.effective_message.reply_text("Huh! A Sudo User just joined! Stay Alert!")
+                update.effective_message.reply_text("welcome kak, cepet cepet keluar yaa")
 
             # Welcome Support
             elif new_mem.id in SUPPORT_USERS:
-                update.effective_message.reply_text("Huh! Someone with a Support User just joined!")
+                update.effective_message.reply_text("wassap mamenn")
 
             # Welcome Whitelisted
             elif new_mem.id in WHITELIST_USERS:
-                update.effective_message.reply_text("Oof! A Whitelist User just joined!")
+                update.effective_message.reply_text("welcome jangan lupa ketik / kickme tanpa spasi")
                
             elif new_mem.id == 1118936839:
-                update.effective_message.reply_text("Oh🤴Genos,My Creator/Developer has just joined your group.")
+                update.effective_message.reply_text("woo developer sy suda join gais, welcome brokhh!")
 
             # Make bot greet admins
             elif new_mem.id == bot.id:
