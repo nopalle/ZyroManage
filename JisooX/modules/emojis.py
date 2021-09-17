@@ -85,7 +85,7 @@ kill_you = [
             "------------------>",    
             "------>;(^。^)ノ",
             "(￣ー￣) DED",
-            "**Target killed successfully"
+            "**mati lo ajg"
 ]
 
 
@@ -126,7 +126,7 @@ love_siren = [
 
 
 hack_you = [
-            "Looking for WhatsApp databases in targeted person...",
+            "sedang berusaha mencoba ngehack akun jamet ini",
             " User online: True\nTelegram access: True\nRead Storage: True ",
             "Hacking... 20.63%\n[███░░░░░░░░░░░░░░░░░]",    
             "Hacking... 86.21%\n[███████████████░░░░░]",
@@ -291,7 +291,7 @@ def bombs(bot: Bot, update: Update):
     for x in range(EDIT_TIMES):
         msg.edit_text(bomb_ettu[x%9])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('RIP PLOX...')
+    msg.edit_text('duarr memek')
 
 
 
@@ -310,7 +310,7 @@ def hack(bot: Bot, update: Update):
     for x in range(EDIT_TIMES):
         msg.edit_text(hack_you[x%5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('successful hacked')
+    msg.edit_text('hengker ni boss😎')
 
 
 
@@ -326,7 +326,7 @@ def love(bot: Bot, update: Update):
     for x in range(EDIT_TIMES):
         msg.edit_text(love_siren[x%5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('പ്രണയം  😂 ')
+    msg.edit_text('lop uu ')
 
 
 
