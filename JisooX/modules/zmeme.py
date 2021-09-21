@@ -69,3 +69,14 @@ async def koc(e):
         await e.edit("z") 
         sleep(1) 
         await e.edit("hebat ga gue😎") 
+
+@register(outgoing=True, pattern='^.iri(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**IRI?**")
+    sleep(2)
+    await typew.edit("**BILANG BOSS HAHAHHAA**")
+    sleep(2) 
+    await typew.edit("**YAHAHAH WAHYUU**")
+    sleep(2)
+    await typew.edit("**PAPALEPAPALE**") 
