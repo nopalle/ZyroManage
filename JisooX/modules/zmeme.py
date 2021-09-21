@@ -94,7 +94,7 @@ sangee = [
 def abc(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('bismillah') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(abc[x%18])
+        msg.edit_text(abcdefg[x%18])
         time.sleep(EDIT_SLEEP)
     msg.edit_text('hebat ga gue😎')
 
