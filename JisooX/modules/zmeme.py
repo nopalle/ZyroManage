@@ -11,7 +11,7 @@ from JisooX.modules.disable import DisableAbleCommandHandler
 from JisooX.modules.helper_funcs.chat_status import is_user_admin, user_admin
 from JisooX.modules.helper_funcs.extraction import extract_user
 
-register(outgoing=True, pattern="^.abc$")
+(outgoing=True, pattern="^.abc$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("bismillah")
@@ -70,7 +70,7 @@ async def koc(e):
         sleep(1) 
         await e.edit("hebat ga gue😎") 
 
-@register(outgoing=True, pattern='^.iri(?: |$)(.*)')
+(outgoing=True, pattern='^.iri(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**IRI?**")
