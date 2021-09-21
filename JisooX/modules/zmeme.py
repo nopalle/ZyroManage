@@ -94,7 +94,7 @@ sangee = [
 def abc(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('bismillah') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(block_chain[x%18])
+        msg.edit_text(abc[x%18])
         time.sleep(EDIT_SLEEP)
     msg.edit_text('hebat ga gue😎')
 
@@ -104,7 +104,7 @@ def abc(bot: Bot, update: Update):
 def iri(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('IRI?') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(block_chain[x%18])
+        msg.edit_text(iri[x%18])
         time.sleep(EDIT_SLEEP)
     msg.edit_text('PAPALEPAPALE')
 
@@ -114,7 +114,7 @@ def iri(bot: Bot, update: Update):
 def sangee(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('P YANG SANGE PC AKU DONG') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(block_chain[x%18])
+        msg.edit_text(sangee[x%18])
         time.sleep(EDIT_SLEEP)
     msg.edit_text('YANG MAU PC YA🥺')
 
