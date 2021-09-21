@@ -11,9 +11,9 @@ from JisooX.modules.disable import DisableAbleCommandHandler
 from JisooX.modules.helper_funcs.chat_status import is_user_admin, user_admin
 from JisooX.modules.helper_funcs.extraction import extract_user
 
-#sleep how many times after each edit in 'abc' 
+#sleep how many times after each edit in 'abcdefg' 
 EDIT_SLEEP = 1
-#edit how many times in 'abc' 
+#edit how many times in 'abcdefg' 
 EDIT_TIMES = 28
 
 
@@ -120,14 +120,14 @@ def sangee(bot: Bot, update: Update):
 
 
 
-ABC_HANDLER = DisableAbleCommandHandler("abc",abc)
+ABCDEFG_HANDLER = DisableAbleCommandHandler("abcdefg",abcdefg)
 IRI_HANDLER = DisableAbleCommandHandler("iri", iri)
 SANGEE_HANDLER = DisableAbleCommandHandler("sangee", sangee) 
-dispatcher.add_handler(ABC_HANDLER)
+dispatcher.add_handler(ABCDEFG_HANDLER)
 dispatcher.add_handler(IRI_HANDLER)
 dispatcher.add_handler(SANGEE_HANDLER)
 
 
 __mod_name__ = "ZYMEME"
-__command_list__ = ["abc", "iri", "sangee"]
-__handlers__ = [ABC_HANDLER, IRI_HANDLER, SANGEE_HANDLER]
+__command_list__ = ["abcdefg", "iri", "sangee"]
+__handlers__ = [ABCDEFG_HANDLER, IRI_HANDLER, SANGEE_HANDLER]
