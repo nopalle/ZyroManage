@@ -11,6 +11,33 @@ from JisooX.modules.disable import DisableAbleCommandHandler
 from JisooX.modules.helper_funcs.chat_status import is_user_admin, user_admin
 from JisooX.modules.helper_funcs.extraction import extract_user
 
+#sleep how many times after each edit in 'abc' 
+EDIT_SLEEP = 1
+#edit how many times in 'abc' 
+EDIT_TIMES = 28
+
+
+
+
+
+#sleep how many times after each edit in 'iri' 
+EDIT_SLEEP = 1
+#edit how many times in 'iri' 
+EDIT_TIMES = 6
+
+
+
+
+
+#sleep how many times after each edit in 'sangee' 
+EDIT_SLEEP = 1
+#edit how many times in 'sangee' 
+EDIT_TIMES = 14
+
+
+
+
+
 (outgoing=True, pattern="^.abc$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
