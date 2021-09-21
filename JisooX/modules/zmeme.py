@@ -86,5 +86,34 @@ sangee = [
        "**AKU LIMIT NIH AYO PC AJA DIJAMIN PUAS🥺**"
        "**KITA ENAK ENAK BARENG MAU GA🥺👉👈**"
        "**YANG MAU PC YA🥺**"
+]
 
 
+@user_admin
+@run_async
+def abc(bot: Bot, update: Update):
+    msg = update.effective_message.reply_text('bismillah') 
+    for x in range(EDIT_TIMES):
+        msg.edit_text(block_chain[x%18])
+        time.sleep(EDIT_SLEEP)
+    msg.edit_text('hebat ga gue😎')
+
+
+@user_admin
+@run_async
+def iri(bot: Bot, update: Update):
+    msg = update.effective_message.reply_text('IRI?') 
+    for x in range(EDIT_TIMES):
+        msg.edit_text(block_chain[x%18])
+        time.sleep(EDIT_SLEEP)
+    msg.edit_text('PAPALEPAPALE')
+
+
+@user_admin
+@run_async
+def sangee(bot: Bot, update: Update):
+    msg = update.effective_message.reply_text('P YANG SANGE PC AKU DONG') 
+    for x in range(EDIT_TIMES):
+        msg.edit_text(block_chain[x%18])
+        time.sleep(EDIT_SLEEP)
+    msg.edit_text('YANG MAU PC YA🥺')
