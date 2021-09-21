@@ -91,7 +91,7 @@ sangee = [
 
 @user_admin
 @run_async
-def abc(bot: Bot, update: Update):
+def abcdefg(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('bismillah') 
     for x in range(EDIT_TIMES):
         msg.edit_text(abcdefg[x%18])
