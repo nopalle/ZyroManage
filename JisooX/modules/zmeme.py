@@ -80,3 +80,18 @@ async def typewriter(typew):
     await typew.edit("**YAHAHAH WAHYUU**")
     sleep(2)
     await typew.edit("**PAPALEPAPALE**") 
+
+@register(outgoing=True, pattern='^.sangee(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**P YANG SANGE PC AKU DONG**")
+    sleep(3)
+    await typew.edit("**AKU SANGE BANGET INI😔**")
+    sleep(3)
+    await typew.edit("**YANG MAU LIAT TITIT 5 HEKTAR PC AJA**")
+    sleep(3)
+    await typew.edit("**AKU LIMIT NIH AYO PC AJA DIJAMIN PUAS🥺**") 
+    sleep(3) 
+    await typew.edit("**KITA ENAK ENAK BARENG MAU GA🥺👉👈**") 
+    sleep(2)
+    await typew.edit("**YANG MAU PC YA🥺**") 
