@@ -117,3 +117,17 @@ def sangee(bot: Bot, update: Update):
         msg.edit_text(block_chain[x%18])
         time.sleep(EDIT_SLEEP)
     msg.edit_text('YANG MAU PC YA🥺')
+
+
+
+ABC_HANDLER = DisableAbleCommandHandler("abc",abc)
+IRI_HANDLER = DisableAbleCommandHandler("iri", iri)
+SANGEE_HANDLER = DisableAbleCommandHandler("sangee", sangee) 
+dispatcher.add_handler(ABC_HANDLER)
+dispatcher.add_handler(IRI_HANDLER)
+dispatcher.add_handler(SANGEE_HANDLER)
+
+
+__mod_name__ = "ZYMEME"
+__command_list__ = ["abc", "iri", "sangee"]
+__handlers__ = [ABC_HANDLER, IRI_HANDLER, SANGEE_HANDLER]
