@@ -40,51 +40,51 @@ EDIT_TIMES = 14
 
 
 abcdefg = [
-        "bismillah"
-        "a"
-        "b"
-        "c"
-        "d"
-        "e"
-        "f"
-        "g"
-        "h"
-        "i"
-        "j"
-        "k"
-        "l"
-        "m"
-        "n"
-        "o"
-        "p"
-        "q"
-        "r"
-        "s"
-        "t"
-        "u"
-        "v"
-        "w"
-        "x"
-        "y"
-        "z"
+        "bismillah", 
+        "a", 
+        "b", 
+        "c", 
+        "d", 
+        "e", 
+        "f", 
+        "g", 
+        "h", 
+        "i", 
+        "j", 
+        "k", 
+        "l", 
+        "m", 
+        "n", 
+        "o", 
+        "p", 
+        "q", 
+        "r", 
+        "s", 
+        "t", 
+        "u", 
+        "v", 
+        "w", 
+        "x", 
+        "y", 
+        "z", 
         "hebat ga gue😎"
 ]
 
 
 iri = [
-     "**IRI?**"
-     "**BILANG BOSS HAHAHHAA**"
-     "**YAHAHAH WAHYUU**"
+     "**IRI?**", 
+     "**BILANG BOSS HAHAHHAA**", 
+     "**YAHAHAH WAHYUU**", 
      "**PAPALEPAPALE**"
 ]
 
 
 sangee = [
-       "**P YANG SANGE PC AKU DONG**"
-       "**AKU SANGE BANGET INI😔**"
-       "**YANG MAU LIAT TITIT 5 HEKTAR PC AJA**"
-       "**AKU LIMIT NIH AYO PC AJA DIJAMIN PUAS🥺**"
-       "**KITA ENAK ENAK BARENG MAU GA🥺👉👈**"
+       "**P YANG SANGE PC AKU DONG**", 
+       "**AKU SANGE BANGET INI😔**", 
+       "**YANG MAU LIAT TITIT 5 HEKTAR PC AJA**", 
+       "**AKU LIMIT NIH AYO PC AJA DIJAMIN PUAS🥺**", 
+       "**KITA ENAK ENAK BARENG MAU GA🥺👉👈**", 
        "**YANG MAU PC YA🥺**"
 ]
 
