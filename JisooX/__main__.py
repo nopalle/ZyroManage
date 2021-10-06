@@ -59,7 +59,7 @@ def vercheck() -> str:
 
 SOURCE_STRING = """
 ⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/feriexp/JisooXRobot)
-⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/feriexp/JisooXRobot.git)
+⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/nopalle/ZyroManage.git)
 """
 
 
@@ -160,8 +160,8 @@ def start(bot: Bot, update: Update, args: List[str]):
 
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
-       
 
+        
 def send_start(bot, update):
     #Try to remove old message
     try:
@@ -174,8 +174,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="[► Help ◄]",callback_data="help_back"),InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/xflicks")]]
-    keyboard += [[InlineKeyboardButton(text="[► Source ◄]",url="https://github.com/FeriEXP/JisooXRobot"),InlineKeyboardButton(text="[► Add Me ◄]",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="[► Help ◄]",callback_data="help_back"),InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/akbarnfal")]]
+    keyboard += [[InlineKeyboardButton(text="[► Source ◄]",url="https://github.com/nopalle/ZyroManage"),InlineKeyboardButton(text="[► Add Me ◄]",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -265,6 +265,18 @@ def help_button(bot: Bot, update: Update):
             LOGGER.exception("Exception in help buttons. %s", str(query.data))
 
 
+@run_async
+def get_help(bot: Bot, update: Update):
+    chat = update.effective_chat  # type: Optional[Chat]
+    args = update.effective_message.text.split(None, 1)
+
+    # ONLY send help in PM
+    if chat.type != chat.PRIVATE:
+
+        update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
+                                            reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="[► Help ◄]",url="t.me/{}?start=help".format(bot.username))],  
+                                                [InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/akbarnfal)]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
