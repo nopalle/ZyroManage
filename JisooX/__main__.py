@@ -18,7 +18,21 @@ from telegram.error import Unauthorized, BadRequest, TimedOut, NetworkError, Cha
 from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop, Dispatcher
 from telegram.utils.helpers import escape_markdown
-from JisooX import dispatcher, updater, TOKEN, WEBHOOK, SUDO_USERS, OWNER_ID, CERT_PATH, PORT, URL, LOGGER, OWNER_NAME, ALLOW_EXCL, telethn
+from JisooX import (
+    dispatcher,
+    updater,
+    TOKEN,
+    WEBHOOK,
+    SUDO_USERS,
+    OWNER_ID,
+    CERT_PATH,
+    PORT,
+    URL,
+    LOGGER,
+    OWNER_NAME,
+    ALLOW_EXCL,
+    telethn,
+)
 from JisooX.modules import ALL_MODULES
 from JisooX.modules.helper_funcs.chat_status import is_user_admin
 from JisooX.modules.helper_funcs.misc import paginate_modules
@@ -59,7 +73,7 @@ def vercheck() -> str:
 
 SOURCE_STRING = """
 ⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/feriexp/JisooXRobot)
-⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/Askarbot/SkyzuXRobot.git)
+⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/feriexp/JisooXRobot.git)
 """
 
 
@@ -161,7 +175,12 @@ def start(bot: Bot, update: Update, args: List[str]):
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
-        
+        else:
+            send_start(bot, update)
+    else:
+        update.effective_message.reply_text("Heya,{} Here..\nHow can I help you? 🙂".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="⚜️Help",url="t.me/{}?start=help".format(bot.username))]]))
+
 def send_start(bot, update):
     #Try to remove old message
     try:
@@ -174,8 +193,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="[► Help ◄]",callback_data="help_back"),InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/skyzuuuu")]]
-    keyboard += [[InlineKeyboardButton(text="[► Source ◄]",url="https://github.com/Askarbot/SkyzuXRobot"),InlineKeyboardButton(text="[► Add Me ◄]",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="[► Help ◄]",callback_data="help_back"),InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/xflicks")]]
+    keyboard += [[InlineKeyboardButton(text="[► Source ◄]",url="https://github.com/FeriEXP/JisooXRobot"),InlineKeyboardButton(text="[► Add Me ◄]",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -276,7 +295,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="[► Help ◄]",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/skyzuuuu")]]))
+                                                [InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/xflicks")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
