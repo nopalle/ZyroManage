@@ -176,7 +176,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("ᴡᴀssᴀᴘ, {} ʜᴇʀᴇ\ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ? ".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
+        update.effective_message.reply_text("ᴡᴀssᴀᴘ, {} ʜᴇʀᴇ ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ? ".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="ʜᴇʟᴘ",url="t.me/{}?start=help".format(bot.username))]]))
 
 def send_start(bot, update):
